@@ -17,7 +17,7 @@ class Database {
             ]
         );
     }
-    public function getAll() {
-        return $this->appointments;
+    public static function getAll() {
+        return self::$appointments;
     }
 }

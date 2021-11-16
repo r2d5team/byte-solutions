@@ -26,7 +26,7 @@ class AppointmentModel {
      }
         public function all(){
             $appointmentList = [];
-            foreach($this->db->getAll() as $appointment) {
+            foreach(Database::getAll() as $appointment) {
                 array_push($appointmentList, new self ($appointment));
             }
             return $appointmentList;

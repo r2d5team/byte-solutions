@@ -8,9 +8,9 @@ $formulario = [
     "email" => $_POST["email"],
     "querytitle" => $_POST["querytitle"],
     "message" => $_POST["message"],];
-    
+
     Database::create($formulario["name"],$formulario["email"],$formulario["querytitle"],$formulario["message"]);
-    
+    var_dump(Database::getAll());
 } else {
 
 echo '<p>Por favor, complete el <a href="create.php">formulario</a></p>';
