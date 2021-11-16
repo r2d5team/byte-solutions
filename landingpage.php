@@ -14,7 +14,7 @@
 
 <?php
       require_once 'database.php';
-  
+
 echo ("somos r2d5");
   ?>
 </section>

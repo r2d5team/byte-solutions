@@ -11,22 +11,23 @@
 </head>
 
 <body>
-    <form method="POST" action="create.php">
+    <form method="POST" action="add.php">
         <div class="mb-3">
 
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name/Surname">
+            <input type="text" class="form-control" name="name" placeholder="Name/Surname">
         </div>
         <div class="mb-3">
 
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" name="email" placeholder="name@example.com">
         </div>
         <div class="mb-3">
 
-            <input type="title" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="title">
+            <input type="title" class="form-control" name="querytitle" aria-describedby="emailHelpId"
+                placeholder="title">
         </div>
         <div class="mb-3">
 
-            <textarea class="form-control" name="" id="" rows="3" placeholder="Message..."></textarea>
+            <textarea class="form-control" name="message" rows="3" placeholder="Message..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
