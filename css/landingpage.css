@@ -1,0 +1,19 @@
+body {
+  background: black;
+}
+
+.btn-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn-create {
+  width: 60%;
+  height: 4vh;
+  border: 3px solid #ff0099;
+  border-radius: 21px;
+  background: rgba(128, 20, 123, 0.54);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0.9, 0.9);
+}

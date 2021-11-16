@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/landingpage.css" />
+
     <title>The Software Office</title>
 </head>
 
-<body>
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <section class="row justify-content-center">
-        <?php
+<?php
       require_once 'database.php';
+  
 echo ("somos r2d5");
   ?>
-    </section>
+</section>
 </body>
 
 </html>
