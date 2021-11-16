@@ -8,7 +8,9 @@ $formulario = [
     "querytitle" => $_POST["querytitle"],
     "message" => $_POST["message"],];
 
+    //add($formulario   )
 var_dump ($formulario);
+
 
 } else {
 
