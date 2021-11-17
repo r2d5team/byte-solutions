@@ -5,9 +5,8 @@ class AppointmentModel {
     public $id;
     public $name;
     public $email;
-    public $querytitle;
     public $message;
-    public $datetime;
+    
 
     private $db;
     
@@ -16,9 +15,9 @@ class AppointmentModel {
         if ($data) {
             $this->id = $data['id'];
             $this->name = $data['name'];
-            $this->querytitle = $data['querytitle'];
+            $this->email = $data['email'];
             $this->message = $data['message'];
-            $this->datetime = $data['datetime'];
+            
         }
         
         $this->db = new Database();
@@ -26,7 +25,7 @@ class AppointmentModel {
      }
         public function all(){
             $appointmentList = [];
-            foreach(Database::getAll() as $appointment) {
+            foreach($this->db->getAll() as $appointment) {
                 array_push($appointmentList, new self ($appointment));
             }
             return $appointmentList;

@@ -1,10 +1,32 @@
 <?php
-
+ 
 class Database {
-    private static $appointments = [];
-    private static $id=0;
-    //private $users=[];
-    public static function create($name, $email,$querytitle,$message){
+    public $appointments = [
+[ 	'id'=> 1,
+    'name' => 'Biplop',
+    'email' => 'biplop@biplop.com',
+	'message' => 'hola'
+],
+[
+    'id' => 2,
+    'name' => 'Ariann',
+    'email' => 'ari@ari.com',
+    'message' => 'Espero que funcione'
+],
+[   'id'=> 3, 
+    'name'=> 'Sergi',
+    'email'=> 'sergi@fakeTotal.fake',
+    'message'=> 'Fake ToTal'
+],
+];
+  
+    public function getAll() {
+        return $this->appointments;
+    }
+}
+
+
+/* public function create($name, $email,$querytitle,$message){
         self::$id++;
         $datetime = date("Y-m-d h:i:sa");
         array_push(self::$appointments, [
@@ -16,8 +38,4 @@ class Database {
             'datetime' => $datetime
             ]
         );
-    }
-    public static function getAll() {
-        return self::$appointments;
-    }
-}
+    }*/
