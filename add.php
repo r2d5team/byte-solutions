@@ -10,11 +10,6 @@ $formulario = [
     "querytitle" => $_POST["querytitle"],
     "message" => $_POST["message"],
 ];
-
-    Database::create($formulario["name"],$formulario["email"],$formulario["querytitle"],$formulario["message"]);
-    var_dump(Database::$appointments);
-    echo "<br>";
-    var_dump( (new AppointmentModel())->all());
     
 } else {
 
