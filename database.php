@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
  
 class Database {
@@ -48,3 +49,6 @@ class Database {
         );
     }*/
 >>>>>>> landingpage
+=======
+
+>>>>>>> ad206e282a74fc582522a0830da23d91e3143a1d
