@@ -10,3 +10,7 @@
     <link rel="stylesheet" href="/../../../../css/generalstyles.css" />
     <title>The Software Office</title>
 </head>
+
+<body>
+
+<?php require_once __DIR__ . "/../components/header.php";?>

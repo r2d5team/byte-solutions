@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . "/../layouts/headbydefault.php" ?>
 
-<body>
+
     <form method="POST" action="add.php">
         <div class="mb-3">
 

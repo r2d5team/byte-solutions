@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . "/../layouts/headbydefault.php" ?>
 
-<body>
-    <h1>Edit Your Query</h1>
+
+    <h2>Edit Your Query</h2>
     <form method="POST" action="edit.php" class="row">
         <div class="col-lg-3 col-sm-2"></div>
         <div class="col-lg-6 col-sm-8">

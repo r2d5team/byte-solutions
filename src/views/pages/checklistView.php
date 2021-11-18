@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . "/../layouts/headbydefault.php" ?>
 
-<body>
-    <h1>Appointments</h1>
+
+    <h2>Appointments</h2>
     <section class='row justify-content-center'>
         <?php
         
