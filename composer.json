@@ -1,0 +1,15 @@
+{
+    "name": "doblen/byte-solutions",
+    "autoload": {
+        "psr-4": {
+            "Doblen\\ByteSolutions\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thisisariann",
+            "email": "ari.menendez13@gmail.com"
+        }
+    ],
+    "require": {}
+}
