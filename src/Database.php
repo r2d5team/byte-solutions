@@ -1,4 +1,6 @@
-    public $appointments = [
+<?php
+class Database {
+public $appointments = [
     [ 'id'=> 1,
     'name' => 'Biplop',
     'email' => 'biplop@biplop.com',
@@ -15,12 +17,17 @@
     'email'=> 'sergi@fakeTotal.fake',
     'message'=> 'Fake ToTal'
     ],
+    [ 'id'=> 4,
+    'name'=> 'Lucas',
+    'email'=> 'lucas@fakeTotal.fak',
+    'message'=> 'Si no working I die'
+    ],
     ];
 
     public function getAll() {
     return $this->appointments;
     }
-
+}
 
 
     /* public function create($name, $email,$querytitle,$message){
@@ -36,6 +43,4 @@
     ]
     );
     }*/
-    =======
-
-    >>>>>>> ad206e282a74fc582522a0830da23d91e3143a1d
+ 
