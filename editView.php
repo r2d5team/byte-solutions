@@ -10,7 +10,33 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/editView.css">
     <title>The Software Office</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Edit Your Query</h1>
+    <form method="POST" action="edit.php" class="row">
+      <div class="col-lg-3 col-sm-2"></div>
+      <div class="col-lg-6 col-sm-8">
+        <fieldset disabled>
+            <div class="mb-3">
+                  <input type="text" class="form-control" name="name" placeholder="Name/Surname">
+              </div>
+              <div class="mb-3">
+                  <input type="email" class="form-control" name="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                  <input type="title" class="form-control" name="querytitle" aria-describedby="emailHelpId" placeholder="title">
+              </div>
+        </fieldset>  
+          <div class="mb-3">
+              <textarea class="form-control" name="message" rows="3" placeholder="Message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">UPDATE</button>
+          <div> OR </div>
+          <button class="btn btn-primary">CANCEL</button>
+      </div>
+      <div class="col-lg-3 col-sm-2"></div>
+    </form>
+  </body>
 </html>
