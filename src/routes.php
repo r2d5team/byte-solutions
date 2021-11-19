@@ -1,12 +1,13 @@
 <?php
 
-require_once __DIR__ . "/Controllers/AppointmentController.php";
-
+namespace App;
+use App\Controllers\AppointmentController;
 
 $uri = $_SERVER["REQUEST_URI"];
+
 $controller = new AppointmentController();
 
-if ($uri == '/landingpage'){
+if ($uri == '/landingpage' || $uri == '/'){
     $controller -> index();
 }
 

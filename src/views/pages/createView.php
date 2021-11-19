@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . "/../layouts/headbydefault.php" ?>
 
 
-    <form method="POST" action="add.php">
+    <form method="GET" action="/checklist">
         <div class="mb-3">
 
             <input type="text" class="form-control" name="name" placeholder="Name/Surname">

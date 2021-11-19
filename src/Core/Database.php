@@ -1,4 +1,5 @@
 <?php
+namespace App\Core;
 class Database {
 public $appointments = [
     [ 'id'=> 1,
