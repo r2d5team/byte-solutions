@@ -5,15 +5,13 @@ use App\Core\SQLConnection;
 
 $uri = $_SERVER["REQUEST_URI"];
 
-/*$db = (new SQLConnection())->mysql;
+$db = (new SQLConnection())->mysql;
 
 $query = $db->query("select * FROM querys");
 
 $result = $query->fetchAll();
 
-var_dump($result);*/
-
-$controller = new AppointmentController();
+/*$controller = new AppointmentController();
 
 if ($uri == '/checklist' || $uri=='/'){
     $controller -> index();

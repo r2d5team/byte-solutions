@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;   
 use App\Core\FakeQueryRepository;
+use App\Core\SQLQueryRepository;
 
 class AppointmentModel {
     public $id;
@@ -21,7 +22,7 @@ class AppointmentModel {
             $this->message = $data['problem_query'];
         }
         
-        $this->db = new FakeQueryRepository();
+        $this->db = new SQLQueryRepository();
 
      }
         public function all(){

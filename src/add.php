@@ -3,13 +3,13 @@
 require_once 'Database.php';
 require_once 'AppointmentModel.php';
 //Validamos que hayan llegado estas variables, y que no esten vacias:
-if (isset($_POST["name"], $_POST["email"], $_POST["querytitle"], $_POST["message"]) and $_POST["name"] !="" and $_POST["email"]!="" and $_POST["querytitle"]!="" and $_POST["message"]!="" ){
+if (isset($_GET["name"], $_GET["email"], $_GET["querytitle"], $_GET["message"]) and $_GET["name"] !="" and $_GET["email"]!="" and $_GET["querytitle"]!="" and $_GET["message"]!="" ){
     //traspasamos a variables locales, para evitar complicaciones con las comillas:
 $formulario = [ 
-    "name" => $_POST["name"],
-    "email" => $_POST["email"],
-    "querytitle" => $_POST["querytitle"],
-    "message" => $_POST["message"],
+    "name" => $_GET["name"],
+    "email" => $_GET["email"],
+    "querytitle" => $_GET["querytitle"],
+    "message" => $_GET["message"],
 ];
     
 } else {
