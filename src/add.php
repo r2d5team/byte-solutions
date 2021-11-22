@@ -1,4 +1,5 @@
 <?php
+
 require_once 'Database.php';
 require_once 'AppointmentModel.php';
 //Validamos que hayan llegado estas variables, y que no esten vacias:

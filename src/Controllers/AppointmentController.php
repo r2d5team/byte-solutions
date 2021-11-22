@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 use App\Models\AppointmentModel;
 
@@ -7,13 +6,6 @@ use App\Models\AppointmentModel;
 class AppointmentController {
 
     public function index(){
-
-        require_once __DIR__ . "/../views/pages/landingpageView.php";
-    }
-    public function create(){
-        require_once __DIR__ . "/../views/pages/createView.php";
-    }
-    public function read(){
       require_once __DIR__ . "/../views/pages/checklistView.php";
       $appointment = (new AppointmentModel())->all();
       foreach ($appointment as $elementAppointment) {
@@ -28,8 +20,17 @@ class AppointmentController {
           ";
         }
     }
+    public function create(){
+        require_once __DIR__ . "/../views/pages/createView.php";
+        
+    }
+    
+    
+    /*public function read(){   
+    }
+
     public function update(){
         require_once __DIR__ . "/../views/pages/editView.php";
-    }
+    }*/
 
 }
