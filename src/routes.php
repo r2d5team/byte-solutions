@@ -1,12 +1,19 @@
 <?php
 namespace App;
 use App\Controllers\AppointmentController;
+use App\Core\SQLConnection;
 
 $uri = $_SERVER["REQUEST_URI"];
 
-$controller = new AppointmentController();
+$db = (new SQLConnection())->mysql;
 
-if ($uri == '/checklist' || $uri == '/'){
+$query = $db->query("select * FROM querys");
+
+$result = $query->fetchAll();
+
+/*$controller = new AppointmentController();
+
+if ($uri == '/checklist' || $uri=='/'){
     $controller -> index();
 }
 
@@ -14,7 +21,7 @@ if ($uri == '/create'){
     $controller -> create();
 }
 
-/*if ($uri == '/checklist'){
+if ($uri == '/checklist'){
     $controller -> read();
 }
 

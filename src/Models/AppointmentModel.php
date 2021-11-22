@@ -1,13 +1,14 @@
 <?php
 namespace App\Models;   
-use App\Core\Database;
+use App\Core\FakeQueryRepository;
+use App\Core\SQLQueryRepository;
 
 class AppointmentModel {
     public $id;
     public $name;
     public $email;
+    public $title;
     public $message;
-    
 
     private $db;
     
@@ -17,11 +18,11 @@ class AppointmentModel {
             $this->id = $data['id'];
             $this->name = $data['name'];
             $this->email = $data['email'];
-            $this->message = $data['message'];
-            
+            $this->title = $data['title_query'];
+            $this->message = $data['problem_query'];
         }
         
-        $this->db = new Database();
+        $this->db = new SQLQueryRepository();
 
      }
         public function all(){
