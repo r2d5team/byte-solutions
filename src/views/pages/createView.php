@@ -4,15 +4,16 @@
 <form method="POST" action="checklist">
     <div class="mb-3">
 
-        <input type="text" class="form-control" name="name" placeholder="Name/Surname">
+    <input id="inputName" type="text" class="form-control" name="name" placeholder="Name/Surname">
     </div>
     <div class="mb-3">
 
-        <input type="email" class="form-control" name="email" placeholder="name@example.com">
+        <input id="inputEmail" type="email" class="form-control" name="email" placeholder="name@example.com">
     </div>
     <div class="mb-3">
 
-        <input type="title" class="form-control" name="querytitle" aria-describedby="emailHelpId" placeholder="title">
+        <input id="inputQueryTitle" type="title" class="form-control" name="querytitle" aria-describedby="emailHelpId"
+            placeholder="title">
     </div>
     <div class="mb-3">
 
