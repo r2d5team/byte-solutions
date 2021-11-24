@@ -13,6 +13,10 @@ $result = $query->fetchAll();*/
 
 $controller = new AppointmentController();
 
+if($_POST){
+    $controller->store($_POST);
+}
+
 if ($uri == '/checklist' || $uri=='/'){
     $controller -> index();
 }
