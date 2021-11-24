@@ -11,10 +11,11 @@ class SQLConnection {
     
     public function __construct()
     {
-        $host = 'localhost';
-        $user = 'root';
-        $pass = '';
-        $database = 'consultas_cto';
+        $config = new Config;
+        $host = $config->host;
+        $user = $config->user;
+        $pass = $config->pass;
+        $database = $config->database;
         $charset = 'utf-8';
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC];
 
