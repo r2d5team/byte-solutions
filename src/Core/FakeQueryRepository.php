@@ -14,6 +14,7 @@ class FakeQueryRepository implements IQueryRepository {
         public function getAll() {
         return $this->appointments;
         }
+        function save($name, $email, $title, $message){}
 }
 
 

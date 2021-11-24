@@ -16,4 +16,11 @@ class SQLQueryRepository implements IQueryRepository {
             $result = $query->fetchAll();
             return $result;
         }
+
+        function save($name, $email, $title, $message)
+        {
+            //$this->connection->query("INSERT INTO `{$this->table}` (`name`,`email`,`title_query`,`problem_query`) VALUES ('{$name}','{$email}','{$title}','{$message}')");
+            $this->connection->query("INSERT INTO `{$this->table}` (`name`,`email`,`title_query`,`problem_query`) VALUES ('{$name}','{$email}','{$title}','{$message}')");
+
+        }
 }
