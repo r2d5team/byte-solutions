@@ -4,7 +4,7 @@ use App\Core\FakeQueryRepository;
 use App\Core\SQLQueryRepository;
 
 class AppointmentModel {
-    public $id;
+    public ?int $id= null;
     public $name;
     public $email;
     public $title;
@@ -15,7 +15,7 @@ class AppointmentModel {
     public function __construct($data = null)
      {
         if ($data) {
-            $this->id = $data['id'];
+            $this->id = isset($data['id']) ? $data['id'] : null;
             $this->name = $data['name'];
             $this->email = $data['email'];
             $this->title = $data['title_query'];
@@ -25,15 +25,19 @@ class AppointmentModel {
         $this->db = new SQLQueryRepository();
 
      }
-        public function all(){
-            $appointmentList = [];
-            foreach($this->db->getAll() as $appointment) {
-                array_push($appointmentList, new self ($appointment));
-            }
-            return $appointmentList;
+    public function all(){
+        $appointmentList = [];
+        foreach($this->db->getAll() as $appointment) {
+            array_push($appointmentList, new self ($appointment));
+        }
+        return $appointmentList;
     }
    
+    public function save()
+    {
+       $this->db->save( $this->name, $this->email, $this->title, $this->message );
+    }
 }
 
-///this es (yo)
-////self es para mi clase
+///this es objeto
+////self es clase

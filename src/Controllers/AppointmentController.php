@@ -31,9 +31,18 @@ class AppointmentController {
         
           }
       
-    
     public function update(){
         require_once __DIR__ . "/../views/pages/editView.php";
     }
 
+    public function store($request){
+      $appointmentToSave = new AppointmentModel($request);
+      $appointmentToSave->save();
+      $this->redirect('/');
+    }
+
+    private function redirect(string $url)
+    {
+      header("Location:{$url}");
+    }
 }

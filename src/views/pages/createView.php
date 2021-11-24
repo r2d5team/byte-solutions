@@ -12,12 +12,12 @@
     </div>
     <div class="mb-3">
 
-        <input id="inputQueryTitle" type="title" class="form-control" name="querytitle" aria-describedby="emailHelpId"
+        <input id="inputQueryTitle" type="title" class="form-control" name="title_query" aria-describedby="emailHelpId"
             placeholder="title">
     </div>
     <div class="mb-3">
 
-        <textarea class="form-control" name="message" rows="3" placeholder="Message..."></textarea>
+        <textarea class="form-control" name="problem_query" rows="3" placeholder="Message..."></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
