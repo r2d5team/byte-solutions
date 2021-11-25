@@ -20,8 +20,8 @@ class AppointmentController {
               <h5 class='card-title'>{$elementAppointment->title}</h5>
               <p class='card-text'> {$elementAppointment->message}</p>
               <h5> {$elementAppointment->datatime}</h5>
-              <a class='btn-general'>edit</a>
-              <a class='btn-general' href='?action=delete&id={$elementAppointment->id}'>delete</a>
+              <a class='btn-card'>edit</a>
+              <a class='btn-card' href='?action=delete&id={$elementAppointment->id}'>delete</a>
               </div>
             </div>    
           ";

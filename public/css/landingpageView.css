@@ -4,7 +4,7 @@ body {
   background: gainsboro;
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 3%;
@@ -48,16 +48,17 @@ body {
   flex-direction: column;
 }
 .btn-general {
-  width: 42%;
+  width: 65%;
   box-sizing: content-box;
   border: var(--button-general-border);
   border-radius: var(--button-general-border-radius);
   background: rgba(128, 20, 123, 0.54);
   box-shadow: var(--button-general-box-shadow);
+  margin-top: 5%;
 }
 .btn-p {
   color: white;
-  font-size: 1.4em;
+  font-size: 0.8em;
   font-weight: bold;
   display: flex;
   justify-content: center;
