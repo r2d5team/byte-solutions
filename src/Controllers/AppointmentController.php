@@ -21,6 +21,7 @@ class AppointmentController {
           </div>    
           ";
         }
+         require_once __DIR__ . "/../views/components/footerChecklist.php";
     }
     public function create(){
         require_once __DIR__ . "/../views/pages/createView.php";
