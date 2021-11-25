@@ -25,6 +25,7 @@ class AppointmentController {
     }
     public function create(){
         require_once __DIR__ . "/../views/pages/createView.php";
+        require_once __DIR__ . "/../views/components/footerCreateView.php";
         
     }
     public function read(){
@@ -34,6 +35,7 @@ class AppointmentController {
       
     public function update(){
         require_once __DIR__ . "/../views/pages/editView.php";
+        require_once __DIR__ . "/../views/components/footerEditView.php";
     }
 
     public function store($request){
