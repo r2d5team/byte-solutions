@@ -25,12 +25,19 @@ if ($uri == '/create'){
     $controller -> create();
 }
 
-if ($uri == '/checklist'){
+if ($uri == '/edit'){
     $controller -> edit();
 }
 
-/*if ($uri == '/edit'){
+if ($uri == '/checklist'){
     $controller -> update();
-}*/
+}
+
+if($_GET){
+    if ($_GET["action"]=="delete"){
+        $controller->appointmentDelete($_GET);
+        $controller->index();
+    }
+}
 
 ?>

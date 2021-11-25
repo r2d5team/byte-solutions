@@ -1,5 +1,7 @@
 <?php
 namespace App\Controllers;
+
+use App\Core\SQLQueryRepository;
 use App\Models\AppointmentModel;
 
 
@@ -18,7 +20,8 @@ class AppointmentController {
               <h5 class='card-title'>{$elementAppointment->title}</h5>
               <p class='card-text'> {$elementAppointment->message}</p>
             </div>
-
+            <button class='btn-general'>edit</button>
+            <a class='btn-general' href='?action=delete&id={$elementAppointment->id}'>delete</a>
           </div>    
           ";
         }
@@ -29,12 +32,12 @@ class AppointmentController {
         
     }
     public function edit(){
-        require_once __DIR__ . "/../views/pages/landingpageView.php";
+        require_once __DIR__ . "/../views/pages/editView.php";
         
           }
       
     public function update(){
-        require_once __DIR__ . "/../views/pages/editView.php";
+        require_once __DIR__ . "/../views/pages/checkListView.php";
     }
 
     public function store($request){
@@ -46,5 +49,10 @@ class AppointmentController {
     private function redirect(string $url)
     {
       header("Location:{$url}");
+    }
+
+    public function appointmentDelete ($request){
+      $appointmentDelete = new SQLQueryRepository();
+      $appointmentDelete -> delete ($request['id']);
     }
 }
