@@ -26,7 +26,7 @@ if ($uri == '/create'){
 }
 
 if ($uri == '/checklist'){
-    $controller -> read();
+    $controller -> edit();
 }
 
 /*if ($uri == '/edit'){

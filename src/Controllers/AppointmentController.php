@@ -18,6 +18,7 @@ class AppointmentController {
               <h5 class='card-title'>{$elementAppointment->title}</h5>
               <p class='card-text'> {$elementAppointment->message}</p>
             </div>
+
           </div>    
           ";
         }
@@ -27,7 +28,7 @@ class AppointmentController {
         require_once __DIR__ . "/../views/pages/createView.php";
         
     }
-    public function read(){
+    public function edit(){
         require_once __DIR__ . "/../views/pages/landingpageView.php";
         
           }
