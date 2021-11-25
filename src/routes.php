@@ -29,8 +29,9 @@ if ($uri == '/checklist'){
     $controller -> read();
 }
 
-/*if ($uri == '/edit'){
+if (substr($uri, 0,6) == '/edit/'){
+    $id = str_replace("/edit/", "", $s);
     $controller -> update();
-}*/
+}
 
 ?>
