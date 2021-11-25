@@ -23,4 +23,5 @@ class SQLQueryRepository implements IQueryRepository {
             $this->connection->query("INSERT INTO `{$this->table}` (`name`,`email`,`title_query`,`problem_query`) VALUES ('{$name}','{$email}','{$title}','{$message}')");
 
         }
+        
 }

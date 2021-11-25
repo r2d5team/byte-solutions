@@ -37,6 +37,12 @@ class AppointmentModel {
     {
        $this->db->save( $this->name, $this->email, $this->title, $this->message );
     }
+
+    /*
+    public function getElementById($id){
+        
+    }
+    */
 }
 
 ///this es objeto
