@@ -47,7 +47,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.btn-general {
+/*.btn-general {
   width: 65%;
   box-sizing: content-box;
   border: var(--button-general-border);
@@ -63,7 +63,8 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-}
+}*/
+
 .or {
   margin-top: 5%;
   font-weight: bolder;
