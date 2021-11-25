@@ -20,6 +20,7 @@ class AppointmentModel {
             $this->email = $data['email'];
             $this->title = $data['title_query'];
             $this->message = $data['problem_query'];
+            $this->datatime = isset($data['created_at']) ? $data['created_at'] : null ;
         }
         
         $this->db = new SQLQueryRepository();
