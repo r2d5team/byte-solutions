@@ -22,7 +22,6 @@
             </div>
             <button type="submit" class="btn-general">UPDATE</button>
             <div> OR </div>
-            <button class="btn-general">CANCEL</button>
         </div>
         <div class="col-lg-3 col-sm-2"></div>
     </form>

@@ -29,8 +29,8 @@ if ($uri == '/checklist'){
     $controller -> read();
 }
 
-/*if ($uri == '/edit'){
+if ($uri == '/edit'){
     $controller -> update();
-}*/
+}
 
 ?>
