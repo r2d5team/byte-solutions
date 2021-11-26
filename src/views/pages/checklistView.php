@@ -2,5 +2,3 @@
 <h2>Appointment List</h2>
 <section class='row justify-content-center'>
 </section>
-
-</body>
