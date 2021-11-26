@@ -48,15 +48,16 @@ body {
   flex-direction: column;
 }
 .btn-general {
-  width: 65%;
+  width: 100%;
   box-sizing: content-box;
   border: var(--button-general-border);
   border-radius: var(--button-general-border-radius);
   box-shadow: var(--button-general-box-shadow);
+  background: rgba(128, 20, 123, 0.54);
   margin-top: 5%;
 }
 .btn-p {
-  color: black;
+  color: white;
   font-size: 0.8em;
   display: flex;
   justify-content: center;
