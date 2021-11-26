@@ -1,5 +1,8 @@
-<section>
+<footer>
     <button class="btn-general" onclick="location='/create'">
-        <p class=" btn-p">ASK FOR A DATE</p>
+        <p class=" btn-p">NEW APPOINTMENT</p>
     </button>
-</section>
+</footer>
+</body>
+
+</html>
