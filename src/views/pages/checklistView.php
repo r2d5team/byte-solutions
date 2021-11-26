@@ -4,5 +4,3 @@
 </section>
 
 </body>
-
-</html>

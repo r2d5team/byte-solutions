@@ -3,5 +3,6 @@
         <a class="btn-p">NEW APPOINTMENT</a>
     </button>
 </section>
+</body>
 
 </html>
