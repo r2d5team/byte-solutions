@@ -1,6 +1,6 @@
 <section>
     <button class="btn-general" onclick="location='/create'">
-        <p class="btn-p">NEW APPOINTMENT</p>
+        <a class="btn-p">NEW APPOINTMENT</a>
     </button>
 </section>
 
